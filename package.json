@@ -9,7 +9,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "tap test/*.js"
   },
   "license": "MIT",
   "dependencies": {
