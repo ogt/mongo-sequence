@@ -1,4 +1,5 @@
 Simple sequence generator for node+mongodb
+--
 
 [![Build Status](https://travis-ci.org/ogt/mongo-sequence.png)](https://travis-ci.org/ogt/mongo-sequence)
 
