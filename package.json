@@ -1,0 +1,35 @@
+{
+  "name": "mongo-sequence",
+  "description": "Simple sequence generator for node+mongodb",
+  "homepage": "https://github.com/ogt/mongo-sequence",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ogt/mongo-sequence.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "glutils": "~0.2.0"
+  },
+  "devDependencies": {
+    "mongojs": "~0.10.0",
+    "tap": "~0.4.8",
+    "glutils": "~0.2.0"
+  },
+  "keywords": [
+    "mongo",
+    "mongodb",
+    "sequence",
+    "promise",
+    "fiber"
+  ],
+  "author": {
+    "name": "Odysseas Tsatalos",
+    "email": "odysseas@tsatalos.com",
+    "url": "http://tsatalos.gr"
+  }
+}
