@@ -3,3 +3,7 @@ var seq = require('../')(db,'testseq1');
 seq.getNext(function(err,no) { console.log(no); });
 seq.getNext(function(err,no) { console.log(no); });
 seq.getNext(function(err,no) { console.log(no); });
+var seq = require('../')(db,'testseq1');
+seq.getNext(function(err,no) { console.log(no); });
+seq.getNext(function(err,no) { console.log(no); });
+seq.getNext(function(err,no) { console.log(no); });
