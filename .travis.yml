@@ -4,5 +4,3 @@ node_js:
   - "0.6"
   - "0.8"
   - "0.10"
-before_script:
-  - mongo mongo_sequence_test --eval "db.dropDatabase()"

@@ -9,7 +9,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "tap test/*.js"
+    "pretest": "mongo mongo_sequence_test --eval 'db.dropDatabase()'",
+    "test": "tap test/*.js",
+    "posttest": "mongo mongo_sequence_test --eval 'db.dropDatabase()'"
   },
   "license": "MIT",
   "dependencies": {
