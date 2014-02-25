@@ -22,17 +22,12 @@ module.exports = function(db,name,opts) {
       } 
     });
   }
-  collection.find({_id : name},function(err,found) {
-    if (err) throw err;
-    if (found.length == 0) {
-      collection.insert({_id : name, sequence : 1 }, function(err){
-        if (err && (err.code >= 11000 || err.code <11005)) { 
-          // this should be ok according to http://docs.mongodb.org/manual/tutorial/create-an-auto-incrementing-field/
-        }
-        else {
-          throw err;
-        }
-      });
+  collection.insert({_id : name, sequence : 0 }, function(err){
+    if (err && (err.code >= 11000 || err.code <11005)) { 
+      // this should be ok according to http://docs.mongodb.org/manual/tutorial/create-an-auto-incrementing-field/
+    }
+    else if (err){
+      throw err;
     }
   });
 
